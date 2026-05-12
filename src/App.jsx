@@ -243,7 +243,7 @@ export default function BallisticsProjectSite() {
     onClick={() => setDarkMode(!darkMode)}
     className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition-transform shadow-lg text-xs md:text-sm"
   >
-    {darkMode ? '☀️ Светлая тема' : '🌙 Тёмная тема'}
+    {darkMode ? '☀️' : '🌙'}
   </button>
 </div>
         </div>
