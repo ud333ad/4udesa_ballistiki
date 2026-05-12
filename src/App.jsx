@@ -234,11 +234,8 @@ export default function BallisticsProjectSite() {
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
           <div>
             <h1 className="text-4xl font-black tracking-tight bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-              Ballistics Lab
+              Баллистика
             </h1>
-            <p className={`${theme.textSecondary} mt-2 text-sm md:text-base`}>
-              Интерактивный университетский проект по физике
-            </p>
           </div>
 
           <div className="hidden md:flex gap-4 items-center text-sm">
@@ -248,9 +245,6 @@ export default function BallisticsProjectSite() {
             >
               {darkMode ? '☀️ Светлая тема' : '🌙 Тёмная тема'}
             </button>
-            <span className={`px-4 py-2 rounded-full border ${theme.border} ${theme.cardBg}`}>Физика</span>
-            <span className={`px-4 py-2 rounded-full border ${theme.border} ${theme.cardBg}`}>Баллистика</span>
-            <span className={`px-4 py-2 rounded-full border ${theme.border} ${theme.cardBg}`}>Траектории</span>
           </div>
         </div>
       </header>
@@ -282,9 +276,6 @@ export default function BallisticsProjectSite() {
                 {isAnimating ? '🔄 Перезапустить' : '▶ Запустить симуляцию'}
               </button>
 
-              <button className={`px-6 py-3 rounded-2xl border ${theme.buttonOutline} backdrop-blur-md transition-colors ${theme.text}`}>
-                Изучить теорию
-              </button>
             </div>
           </div>
 
@@ -876,10 +867,9 @@ export default function BallisticsProjectSite() {
       <footer className={`relative z-10 border-t ${theme.border} mt-16 ${theme.footerBg} backdrop-blur-md`}>
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <h4 className="font-bold text-cyan-500">Ballistics Lab</h4>
-            <p className={`${theme.textMuted} text-sm mt-1`}>Университетский проект по физике и математическому моделированию</p>
+            <h4 className="font-bold text-cyan-500">Баллистика</h4>
           </div>
-          <div className={`${theme.textMuted} text-sm`}>© 2026 Interactive Physics Project</div>
+          <div className={`${theme.textMuted} text-sm`}>© 2026 Белов Дмитрий, студент гр. 1-090207</div>
         </div>
       </footer>
     </div>
