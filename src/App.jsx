@@ -238,14 +238,14 @@ export default function BallisticsProjectSite() {
             </h1>
           </div>
 
-          <div className="hidden md:flex gap-4 items-center text-sm">
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition-transform shadow-lg"
-            >
-              {darkMode ? '☀️ Светлая тема' : '🌙 Тёмная тема'}
-            </button>
-          </div>
+          <div className="flex gap-2 items-center text-sm flex-wrap">
+  <button
+    onClick={() => setDarkMode(!darkMode)}
+    className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition-transform shadow-lg text-xs md:text-sm"
+  >
+    {darkMode ? '☀️ Светлая тема' : '🌙 Тёмная тема'}
+  </button>
+</div>
         </div>
       </header>
 
