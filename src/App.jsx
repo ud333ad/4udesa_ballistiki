@@ -828,40 +828,26 @@ export default function BallisticsProjectSite() {
         </section>
 
         {/* Формулы */}
-        <section className="grid lg:grid-cols-2 gap-8">
-          <div className={`rounded-3xl border ${theme.border} ${theme.cardBg} backdrop-blur-xl p-8`}>
-            <h3 className={`text-3xl font-black mb-6 ${theme.text}`}>Формулы движения</h3>
-            <div className="space-y-6">
-              <div className={`${theme.codeBg} rounded-2xl p-5 border ${theme.border}`}>
-                <p className={`${theme.textMuted} text-sm mb-2`}>Дальность полета</p>
-                <p className={`font-mono ${theme.codeText} text-lg`}>L = (v² · sin(2α)) / g</p>
-              </div>
-              <div className={`${theme.codeBg} rounded-2xl p-5 border ${theme.border}`}>
-                <p className={`${theme.textMuted} text-sm mb-2`}>Максимальная высота</p>
-                <p className={`font-mono ${theme.codeText} text-lg`}>H = (v² · sin²(α)) / 2g</p>
-              </div>
-              <div className={`${theme.codeBg} rounded-2xl p-5 border ${theme.border}`}>
-                <p className={`${theme.textMuted} text-sm mb-2`}>Время полета</p>
-                <p className={`font-mono ${theme.codeText} text-lg`}>t = (2v · sin(α)) / g</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={`rounded-3xl border ${theme.border} bg-gradient-to-br from-cyan-500/10 to-blue-900/20 p-8 overflow-hidden relative`}>
-            <div className="absolute -right-10 -top-10 w-48 h-48 bg-cyan-500/20 blur-3xl rounded-full" />
-            <div className="relative z-10">
-              <h3 className={`text-3xl font-black mb-6 ${theme.text}`}>Возможности проекта</h3>
-              <div className="space-y-5">
-                {['Интерактивные графики', 'Сравнение траекторий', '3D визуализация', 'Теоретические блоки', 'Современный адаптивный дизайн'].map((item) => (
-                  <div key={item} className={`flex items-center gap-4 ${theme.cardBg} rounded-2xl border ${theme.border} px-5 py-4`}>
-                    <div className="w-3 h-3 rounded-full bg-cyan-400" />
-                    <p className={theme.textSecondary}>{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Формулы */}
+<section className="flex justify-center">
+  <div className={`rounded-3xl border ${theme.border} ${theme.cardBg} backdrop-blur-xl p-8 w-full`}>
+    <h3 className={`text-3xl font-black mb-6 text-center ${theme.text}`}>Формулы движения</h3>
+    <div className="flex flex-col md:flex-row gap-4 justify-center">
+      <div className={`${theme.codeBg} rounded-2xl p-5 border ${theme.border} text-center flex-1`}>
+        <p className={`${theme.textMuted} text-sm mb-2`}>Дальность полета</p>
+        <p className={`font-mono ${theme.codeText} text-lg whitespace-nowrap`}>L = (v² · sin(2α)) / g</p>
+      </div>
+      <div className={`${theme.codeBg} rounded-2xl p-5 border ${theme.border} text-center flex-1`}>
+        <p className={`${theme.textMuted} text-sm mb-2`}>Максимальная высота</p>
+        <p className={`font-mono ${theme.codeText} text-lg whitespace-nowrap`}>H = (v² · sin²(α)) / 2g</p>
+      </div>
+      <div className={`${theme.codeBg} rounded-2xl p-5 border ${theme.border} text-center flex-1`}>
+        <p className={`${theme.textMuted} text-sm mb-2`}>Время полета</p>
+        <p className={`font-mono ${theme.codeText} text-lg whitespace-nowrap`}>t = (2v · sin(α)) / g</p>
+      </div>
+    </div>
+  </div>
+</section>
       </main>
 
       <footer className={`relative z-10 border-t ${theme.border} mt-16 ${theme.footerBg} backdrop-blur-md`}>
